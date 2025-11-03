@@ -1,0 +1,123 @@
+.page-container {
+	background-color: white;
+	border-radius: 12px;
+	padding: 20px;
+	margin: 40px auto;
+	max-width: 1200px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+
+.stock-page-container {
+	padding: 20px;
+	background-color: #f5f7fa;
+	min-height: 100vh;
+	font-family: 'Inter', sans-serif;
+}
+
+
+.stock-page-container h2 {
+	margin-bottom: 20px;
+	color: #1e3a8a;
+	font-weight: 600;
+	border-bottom: 2px solid #2563eb;
+	display: inline-block;
+	padding-bottom: 6px;
+}
+
+
+.transaction-form {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	padding: 20px;
+	background-color: #ffffff;
+	border-radius: 12px;
+	box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+	align-items: center;
+	margin-bottom: 20px;
+	transition: box-shadow 0.2s;
+}
+
+.transaction-form:hover {
+	box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.transaction-form select,
+.transaction-form input {
+	padding: 10px 12px;
+	border-radius: 8px;
+	border: 1px solid #d1d5db;
+	font-size: 14px;
+	transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.transaction-form select:focus,
+.transaction-form input:focus {
+	outline: none;
+	border-color: #2563eb;
+	box-shadow: 0 0 0 3px rgba(37,99,235,0.2);
+}
+
+
+.transaction-form .dx-button {
+	flex-shrink: 0;
+	padding: 0 20px;
+	background-color: #2563eb;
+	color: white;
+	border-radius: 8px;
+	font-weight: 500;
+	transition: background-color 0.2s;
+}
+
+.transaction-form .dx-button:hover {
+	background-color: #1e40af;
+}
+
+
+.dx-datagrid {
+	background-color: #ffffff;
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+	font-size: 14px;
+}
+
+.dx-datagrid-headers {
+	background-color: #2563eb !important;
+	color: white !important;
+	font-weight: 600;
+}
+
+.dx-datagrid .dx-row:hover {
+	background-color: rgba(37, 99, 235, 0.05);
+}
+
+.dx-datagrid .dx-row > td {
+	padding: 10px;
+}
+
+/* IN/OUT renkleri */
+.dx-cell-green {
+	color: green;
+	font-weight: 600;
+}
+
+.dx-cell-red {
+	color: red;
+	font-weight: 600;
+}
+
+
+@media (max-width: 768px) {
+	.transaction-form {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.transaction-form select,
+	.transaction-form input,
+	.transaction-form .dx-button {
+		width: 100%;
+	}
+}
