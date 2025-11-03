@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "jGu0kUEgN5Ip2/grERD8peuD2OVcMOZ9niYnftEKWE0=",
+  "Source": "MiniStok.Api",
+  "BasePath": "_content/MiniStok.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
